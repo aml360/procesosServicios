@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
  *
  */
 public class Cartera {
-	
+
 	private float dinero;
 	DecimalFormat decimalFormat = new DecimalFormat("###.00");
 
@@ -23,8 +23,8 @@ public class Cartera {
 			System.out.println("Error al esperar un segundo");
 		}
 		dinero += Math.random() * 100;
-		System.out.println("El dinero actual del client " + Thread.currentThread().getId() + " es de: "
-				+ decimalFormat.format(dinero));
+		System.out.println(
+				"El dinero actual del client " + Thread.currentThread().getId() + " es de: " + decimalFormat.format(dinero));
 	}
 
 	/**
